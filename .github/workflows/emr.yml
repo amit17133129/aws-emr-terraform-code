@@ -6,7 +6,9 @@ on:
       tfpath:
         description: 'TF File Path'     
         required: false
-        default: 'aws-emr/'
+        default: 'aws-emr'
+  push:
+    branches: [ main ]
 
 jobs:
   tf_code_check:
