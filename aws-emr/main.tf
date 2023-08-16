@@ -1,0 +1,19 @@
+module "aws_emr" {
+  source                        = "./modules"
+  emr_cluster_name              = var.emr_cluster_name
+  release_label                 = var.release_label
+  application_names             = var.application_names
+  master_instance_count         = var.master_instance_count
+  master_instance_type          = var.master_instance_type
+  bootstrap_path                = var.bootstrap_path
+  bootstrap_name                = var.bootstrap_name
+  aws_security_group_name       = var.aws_security_group_name
+  vpc_cidr_block                = var.vpc_cidr_block
+  subnet_cidr_block             = var.subnet_cidr_block
+  aws_iam_role_name             = var.aws_iam_role_name
+  aws_iam_role_policy_name      = var.aws_iam_role_policy_name
+  aws_iam_role_profile_name     = var.aws_iam_role_profile_name
+  aws_iam_instance_profile_name = var.aws_iam_instance_profile_name
+  tag_name                      = var.tag_name
+  env_name                      = var.env_name
+}

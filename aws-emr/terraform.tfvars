@@ -1,0 +1,16 @@
+emr_cluster_name              = "emr-test-arn"
+release_label                 = "emr-6.2.0"
+application_names             = ["Spark", "Zeppelin"]
+master_instance_count         = 1
+master_instance_type          = "m5.xlarge"
+bootstrap_path                = "s3://elasticmapreduce/bootstrap-actions/run-if"
+bootstrap_name                = "runif"
+aws_security_group_name       = "allow_access"
+vpc_cidr_block                = "168.31.0.0/16"
+subnet_cidr_block             = "168.31.0.0/20"
+aws_iam_role_name             = "iam_emr_service_role"
+aws_iam_role_policy_name      = "iam_emr_service_policy"
+aws_iam_role_profile_name     = "iam_emr_profile_role"
+aws_iam_instance_profile_name = "emr_profile"
+tag_name                      = "emr_test"
+env_name                      = "dev"
